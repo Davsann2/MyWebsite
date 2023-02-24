@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  left: 100;
+  right: 100;
+  box-sizing: border-box;
+}
+
+
+header {
+
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+  
+
+}
+
+h1 {
+  font-family: 'Acme', sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 15px;;
+}
+
+input {
+  width: 75%;
+  margin-right: 0;
+  padding: 10px;
+  border: none;
+  font-size: 14px;
+  font-family: 'Merriweather', serif;
+}
+
+.addBtn {
+  width: 25%;
+  padding: 10px;
+  margin-left:0;
+  background: #d9d9d9;
+  color: #555;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+  color: #FFF;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  font-size: 14px;
+  transition: 0.2s;
+  font-family: 'Merriweather', serif;
+
+
+ 
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+ul li:nth-child(odd) {
+}
+
+
+ul li:hover {
+
+}
+
+
+ul li.checked {
+
+  color: #fff;
+  text-decoration: line-through;
+
+}
+
+
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the trash button */
+.far {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.far:hover {
+  background-color: tomato;
+  color: white;
+}
+
+.hero{
+	height: 100vh;
+	width: 100%;
+	background-image: url("BACKGROUND1.jpg");
+	background-size: cover;
+	background-position: center;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+.logo{
+	color: #36454F;
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
+
+}
+
+span{
+	color: #6495ED;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-table;
+	padding: 10px 25px;
+  font-size: 20px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+nav ul li a:hover{
+	color: #000000;
+	transition: .4s;
+}
+
+.btn{
+	background-color: #FFA500;
+	color: white;
+	text-decoration: none;
+	border: 2px.solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 20px;
+	transition: transform .4s;
+
+}
+.btn:hover{
+	transform: scale(1.1);
